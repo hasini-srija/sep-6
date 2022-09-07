@@ -1,0 +1,16 @@
+#include<stdio.h>
+void towers(int, char,char,char);
+int main()
+{
+int num;
+scanf("%d",&num);
+towers(num,'A','C','B');
+return 0;
+}
+void towers(int num, char source, char target, char temp)
+{
+  if(num==1)
+  {
+    printf("\n Move disc 1 from peg%c to peg %c",num, source, target);
+    return;
+  }
